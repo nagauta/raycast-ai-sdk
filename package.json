@@ -1,7 +1,7 @@
 {
-  "name": "my-typescript-package",
+  "name": "@nagauta/raycast-ai-sdk",
   "version": "1.0.0",
-  "description": "TypeScriptパッケージの雛形",
+  "description": "Raycast AI SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -11,8 +11,12 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "raycast",
+    "ai",
+    "sdk"
+  ],
+  "author": "nagauta",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
