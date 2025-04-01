@@ -1,21 +1,38 @@
-# my-typescript-package
+# raycast-ai-sdk
 
-TypeScriptで作成されたnpmパッケージの雛形です。
+RaycastのAI機能をプログラムから利用するためのTypeScriptパッケージです。
 
 ## インストール
 
 ```bash
-npm install my-typescript-package
+npm install raycast-ai-sdk
 ```
 
 ## 使用方法
 
 ```typescript
-import { greet, add } from 'my-typescript-package';
+import { askAI } from 'raycast-ai-sdk';
 
-console.log(greet('世界')); // こんにちは、世界さん！
-console.log(add(1, 2)); // 3
+async function main() {
+    const result = await askAI("AIに質問したい内容");
+    console.log(result);
+}
 ```
+
+### sample
+`npx tsx sample/sample.ts`
+
+### オプション
+
+AIへの質問時に以下のオプションを設定できます：
+
+- `creativity`: "high" | "medium" | "low"
+- `model`: 使用するAIモデル（デフォルト: "openai-gpt-4"）
+
+## 前提条件
+
+- Raycastがインストールされていること
+- Raycast AI機能が利用可能な状態であること
 
 ## 開発
 
