@@ -44,7 +44,6 @@ export const askAI = async (query: string): Promise<string> => {
 
 	if (result) {
 		try {
-			console.info(`whoawhoa ${result}`)
 			return result
 		} catch (error) {
 			throw new Error("ファイル削除中にエラーが発生しました: " + (error instanceof Error ? error.message : String(error)))
