@@ -1,54 +1,57 @@
-# raycast-ai-sdk
+# Raycast AI SDK
 
-RaycastのAI機能をプログラムから利用するためのTypeScriptパッケージです。
+Raycast AI SDK for integrating everything for Raycast Pro subscribers
 
-## インストール
+## Installation
 
 ```bash
 npm install raycast-ai-sdk
 ```
 
-## 使用方法
+## Usage
 
 ```typescript
 import { askAI } from 'raycast-ai-sdk';
 
 async function main() {
-    const result = await askAI("AIに質問したい内容");
+    const result = await askAI("Content you want to ask the AI");
     console.log(result);
 }
 ```
 
-### sample
+### Sample
 `npx tsx sample/sample.ts`
 
-### オプション
+### Options
 
-AIへの質問時に以下のオプションを設定できます：
+You can set the following options when asking the AI:
 
 - `creativity`: "high" | "medium" | "low"
-- `model`: 使用するAIモデル（デフォルト: "openai-gpt-4"）
+- `model`: AI model to use (default: "openai-gpt-4")
 
-## 前提条件
+## Prerequisites
 
-- Raycastがインストールされていること
-- Raycast AI機能が利用可能な状態であること
+- Raycast must be installed
+- Raycast Pro subscription is requiredd
+- [Raycast Port](https://www.raycast.com/litomore/raycast-port) must be installed
+- callbackExec option must be enabled in Raycast Port
 
-## 開発
 
-### セットアップ
+## Development
+
+### Setup
 
 ```bash
 npm install
 ```
 
-### スクリプト
+### Scripts
 
-- `npm run build` - TypeScriptのコンパイル
-- `npm run test` - テストの実行
-- `npm run lint` - コードの静的解析
-- `npm run format` - コードのフォーマット
+- `npm run build` - Compile TypeScript
+- `npm run test` - Run tests
+- `npm run lint` - Static code analysis
+- `npm run format` - Format code
 
-## ライセンス
+## License
 
 MIT 
