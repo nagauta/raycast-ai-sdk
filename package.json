@@ -4,12 +4,29 @@
   "description": "Raycast AI SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagauta/raycast-ai-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nagauta/raycast-ai-sdk/issues"
+  },
+  "homepage": "https://github.com/nagauta/raycast-ai-sdk#readme",
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
+    "lint:check": "eslint src/**/*.ts --max-warnings 0",
     "fix-lint": "eslint src/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
     "prepare": "npm run build"
   },
   "keywords": [
