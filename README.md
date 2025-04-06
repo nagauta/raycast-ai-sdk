@@ -5,7 +5,7 @@ Raycast AI SDK for integrating everything for Raycast Pro subscribers
 ## Installation
 
 ```bash
-npm install raycast-ai-sdk
+yarn add raycast-ai-sdk
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ async function main() {
 ```
 
 ### Sample
-`npx tsx sample/sample.ts`
+`yarn tsx sample/sample.ts`
 
 ### Options
 
@@ -42,15 +42,15 @@ You can set the following options when asking the AI:
 ### Setup
 
 ```bash
-npm install
+yarn install
 ```
 
 ### Scripts
 
-- `npm run build` - Compile TypeScript
-- `npm run test` - Run tests
-- `npm run lint` - Static code analysis
-- `npm run format` - Format code
+- `yarn build` - Compile TypeScript
+- `yarn test` - Run tests
+- `yarn lint` - Static code analysis
+- `yarn format` - Format code
 
 ## License
 
