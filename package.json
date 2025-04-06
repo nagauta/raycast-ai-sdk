@@ -8,6 +8,7 @@
     "build": "tsc",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
+    "fix-lint": "eslint src/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build"
   },
