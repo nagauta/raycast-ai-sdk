@@ -1,6 +1,6 @@
 import { execSync } from "node:child_process"
-import { readFileSync, existsSync, unlinkSync } from "node:fs"
-import { createServer, Server } from "node:net"
+import { existsSync, unlinkSync } from "node:fs"
+import { createServer } from "node:net"
 import { randomUUID } from "node:crypto"
 
 interface AskOptions {
