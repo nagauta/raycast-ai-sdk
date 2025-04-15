@@ -1,7 +1,9 @@
 import { askAI } from "../src/sdk"
 
 async function main() {
-	const result = await askAI("who is the ceo of Raycast?")
+	const defaultPrompt = "who is the ceo of Raycast?"
+	const prompt = process.argv[2] || defaultPrompt
+	const result = await askAI(prompt)
 	console.log(result)
 }
 
